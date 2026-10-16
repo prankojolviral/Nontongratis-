@@ -1,0 +1,146 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  padding: 25px 16px;
+
+  background:
+    radial-gradient(
+      circle at top,
+      #35103f 0%,
+      #1b0821 42%,
+      #100411 100%
+    );
+
+  color: #ffffff;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.header {
+  max-width: 560px;
+  margin: 35px auto 45px;
+  text-align: center;
+}
+
+.header h1 {
+  margin: 0 0 18px;
+  color: #ff0050;
+  font-size: clamp(32px, 8vw, 44px);
+  font-weight: 800;
+  letter-spacing: 1px;
+}
+
+.header h1 span {
+  color: #ff477e;
+}
+
+.header p {
+  margin: 0;
+  color: #eee5f0;
+  font-size: 17px;
+  line-height: 1.7;
+}
+
+.card {
+  width: 100%;
+  max-width: 560px;
+  margin: auto;
+  padding: 30px 20px;
+
+  text-align: center;
+  background: #2c1231;
+  border-radius: 28px;
+  box-shadow: 0 15px 45px rgba(0, 0, 0, 0.25);
+}
+
+.card h2 {
+  margin: 15px 0 30px;
+  font-size: 25px;
+}
+
+.thumbnail {
+  position: relative;
+  display: block;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  overflow: hidden;
+  border-radius: 22px;
+  background: #48204e;
+}
+
+.thumbnail img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+.play-icon {
+  position: absolute;
+  inset: 0;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  color: white;
+  font-size: 55px;
+  text-shadow: 0 3px 15px #000;
+  background: rgba(0, 0, 0, 0.12);
+}
+
+.description {
+  margin: 28px 0;
+  color: #f4edf5;
+  font-size: 16px;
+  line-height: 1.8;
+}
+
+.button {
+  display: block;
+  width: 100%;
+  margin-top: 16px;
+  padding: 20px 12px;
+
+  border-radius: 18px;
+  color: #ffffff;
+  text-decoration: none;
+  text-align: center;
+
+  font-size: 17px;
+  font-weight: bold;
+  line-height: 1.5;
+
+  transition: transform 0.2s;
+}
+
+.button:active {
+  transform: scale(0.98);
+}
+
+.button-primary {
+  background: #ff0050;
+}
+
+.button-secondary {
+  background: #652575;
+  border: 1px solid #a65bb7;
+}
+
+.disclosure {
+  margin: 25px 0 10px;
+  color: #cbbbd0;
+  font-size: 13px;
+  line-height: 1.8;
+}
+
+footer {
+  max-width: 560px;
+  margin: 28px auto 10px;
+  color: #a99aaf;
+  font-size: 12px;
+  text-align: center;
+}
